@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<header class="header">
+    <div class="header-inner body-width">
+        <a href="/" class="logo"></a>
+        <div class="category">
+            <a href="#" class="category-link">分类</a>
+            <i class="icon-arrow"></i>
+            <div class="category-result"></div>
+            <!-- 边框 -->
+            <span class="btn-border"></span>
+            <span class="result-border"></span>
+            <span class="neck-border"></span>
+        </div>
+        <div class="search">
+            <input type="text" class="search-text" placeholder="Seach here...">
+            <button class="search-btn"><i class="icon-search"></i></button>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <span class="line"></span>
+                    <a href="/" class="dreamer" style="font-size: 20px">首页</a>
+                    <i class="icon-text__pink icon-new">new</i>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <a href="/" class="dreamer" style="font-size: 20px">标签</a>
+                </li>
+                <% if(user) { %>
+                <li>
+                    <span class="line"></span>
+                    <a href="/post" class="dreamer" style="font-size: 20px">发表</a>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <a href="/upload" class="dreamer" style="font-size: 20px">上传</a>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <a href="/logout" class="dreamer" style="font-size: 20px">退出</a>
+                </li>
+                <% } else { %>
+                <li>
+                    <span class="line"></span>
+                    <a href="/reg" class="icon-text__pink register"  style="font-size: 20px">注册</a>
+                </li>
+                <li>
+                    <span class="line"></span>
+                    <a href="/login"  style="font-size: 20px">登录</a>
+                </li>
+                <% } %>
+                <li>
+                    <span class="line"></span>
+                    <i class="icon-app"></i>
+                    <a href="#" class="app"  style="font-size: 20px">手机版</a>
+                    <i class="icon-arrow"></i>
+                    <div class="app-hover">
+                        <a href="#"></a>
+                        <p>扫一扫下载手机客户端</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-shadow"></div>
+
+</header>
+
+<!--<nav>-->
+    <!--<div class="logo"></div>-->
+    <!--<h1><%= title %></h1>-->
+    <!--<a href="/">首页</a>-->
+    <!--<a title="存档" href="/archive">存档</a>-->
+    <!--<a href="/tags">标签</a>-->
+    <!--<% if(user) { %>-->
+    <!--<span><a href="/post">发表</a></span>-->
+    <!--<span><a href="/upload">上传</a></span>-->
+    <!--<span><a href="/logout">退出</a></span>-->
+    <!--<% } else { %>-->
+    <!--<span><a href="/login">登录</a></span>-->
+    <!--<span><a href="/reg">注册</a></span>-->
+    <!--<% } %>-->
+<!--</nav>-->
+
+<article>
+    <% if (success) { %>
+    <div><%= success %></div>
+    <% } %>
+    <% if (error) { %>
+    <div><%= error %> </div>
+    <% } %>
+

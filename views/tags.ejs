@@ -1,0 +1,9 @@
+<%- include header %>
+<div class="tags">
+    <form action="" class="forms">
+<% posts.forEach(function (tag, index) { %>
+<a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+<% }) %>
+    </form>
+</div>
+<%- include footer %>

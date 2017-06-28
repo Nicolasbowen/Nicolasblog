@@ -1,0 +1,15 @@
+<% include header %>
+<div class="edi">
+<form method="post" action="/edit/<%= post.name %>/<%= post.time.minute %>/<%= post.title %>" class="huifu" style="top: 20vh">
+    标题:<br>
+    <input type="text" name="title" value="<%= post.title %>" disabled><br>
+    标签：<br />
+    <input type="text" name="tag1" value="<%= post.tags[0] %>" disabled="disabled" />
+    <input type="text" name="tag2" value="<%= post.tags[1] %>" disabled="disabled" />
+    <input type="text" name="tag3" value="<%= post.tags[2] %>" disabled="disabled" /><br />
+    内容:<br>
+    <textarea rows="10" cols="80" name="post"><%= post.post %></textarea><br>
+    <input type="submit" value="修改">
+</form>
+</div>
+<% include footer %>

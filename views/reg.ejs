@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title><%= title %></title>
+<link rel="stylesheet" href="Regcss/style.css">
+<body>
+
+<div class="register-container">
+    <h1>ShareBlog</h1>
+
+    <div class="connect">
+        <p>Blog of world. Share to world.</p>
+    </div>
+
+    <form method="post" id="registerForm">
+            <input type="text" name="username" class="username" placeholder="您的用户名"/>
+            <input type="password" name="password" class="password" placeholder="输入密码" />
+            <input type="password" name="password_re" class="confirm_password" placeholder="再次输入密码" />
+            <input type="email" name="email" class="email" placeholder="输入邮箱地址" />
+        <input id="submit" type="submit" value="注     册"></input>
+        <input type="text" style="background-color: #0c9c6e" name="" class="" value="           注册成功            等待跳转.." hidden autocomplete="off" id="number"/>
+    </form>
+    <a href="/login">
+        <button type="button" class="register-tis">已经有账号？</button>
+    </a>
+
+</div>
+
+</body>
+<!--<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>-->
+<!--<script src="js/common.js"></script>-->
+<!--背景图片自动更换-->
+<!--<script src="js/supersized.3.2.7.min.js"></script>-->
+<!--<script src="js/supersized-init.js"></script>-->
+<!--表单验证-->
+<!--<script src="js/jquery.validate.min.js?var1.14.0"></script>-->
+</html>
+<!--//////////////////////-->
+<!--<form method="post" class="form">-->
+    <!--用户:<input type="text" name="username" required><br>-->
+    <!--密码:<input type="text" name="password" required><br>-->
+    <!--确认:<input type="text" name="password_re" required><br>-->
+    <!--邮箱:<input type="email" name="email" required><br>-->
+    <!--<input type="submit" value="提交" class="zhuce">-->
+<!--</form>-->
+

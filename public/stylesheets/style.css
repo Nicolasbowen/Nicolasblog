@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    padding: 0em;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.login-bg{
+    height:100%;background:#16a085;overflow:hidden;
+}
+canvas{z-index:-1;position:absolute;}
+.bg{
+    padding-top: 80px;
+    height:1500px;
+    /*background-color: indigo;*/
+}
+
+h2{
+    margin: 2em 300px;
+    color: #246;
+}
+
+.Show_about {
+    float: left;
+}
+.item-1{
+    float: left;
+    width: 210px;
+    height: 445px;
+}
+.item-2{
+    background-color: #1e9ed8;
+    background-image: url("../images/timg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item-2 span {
+    display: block;
+    padding-top: 20px;
+    padding-left:30px;
+    color: black;
+    font-size:25px;
+}
+.item-2 p {
+    text-align: center;
+}
+.TT{
+    font-size: 30px;
+    color: #684;
+}
+
+article {
+    font-size: 16px;
+    padding-top: 0em;
+}
+
+.edit {
+    margin: 3px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 13px;
+}
+
+.edit:hover {
+    text-decoration: none;
+    background-color: #f00;
+    color: #fff;
+    -webkit-transition: color .2s linear;
+}
+
+.prepage a {
+    float: left;
+    text-decoration: none;
+    padding: .5em 1em;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.nextpage a {
+    float: right;
+    text-decoration: none;
+    padding: .5em 1em;
+    color: #ff0000;
+    font-weight: bold;
+}
+.reg{
+    height:900px;
+    width:100%;
+    background-image: url("../images/timg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.edi{
+    height:900px;
+    width:100%;
+    background-image: url("../images/timg11.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.huifu{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 2%;
+    border: 1px solid black;
+    box-shadow: 0px 1px 30px inset;
+    border-radius: 25px;
+}
+
+.arti{
+    margin-top: -32px;
+    height:900px;
+    width:100%;
+    background-image: url("../images/timg10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.uplo{
+    height:900px;
+    width:100%;
+    background-image: url("../images/timg9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.posts{
+    height:900px;
+    width:100%;
+    background-image: url("../images/timg8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.zhuce{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 90%;
+    background-color: #796;
+}
+.login{
+    height: 900px;
+    background-image: url("../images/timg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*.loginForm{*/
+    /*position: fixed;*/
+    /*width: 20%;*/
+    /*top: 35vh;*/
+    /*left: 40%;*/
+    /*padding: 2%;*/
+    /*border: 1px solid black;*/
+    /*box-shadow: 0px 1px 30px inset;*/
+    /*border-radius: 25px;*/
+/*}*/
+.prepage a:hover, .nextpage a:hover {
+    text-decoration: none;
+    background-color: #ff0000;
+    color: #f9f9f9;
+    -webkit-transition: color .2s linear;
+}
+
+.archive {
+    list-style: none;
+    line-height: 28px;
+}
+
+.archive h3 {
+    margin: 0.5em 0;
+}
+
+.archive time {
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    margin-right: 1.2em;
+}
+
+.tag {
+    background-color: mediumturquoise;
+    border-radius: 3px;
+    font-size: 41px;
+    color: aqua;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 8px;
+}
+.tags{
+    height: 900px;
+    background-image: url("../images/timg7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tag:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-transition: color .2s linear;
+}
+
+.search {
+    border: 0;
+    width: 6em;
+    text-align: center;
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.edit {
+    margin: 3px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 13px;
+}
+
+.edit:hover {
+    text-decoration: none;
+    background-color: #f00;
+    color: #fff;
+    -webkit-transition: color .2s linear;
+}
+
+.prepage a {
+    float: left;
+    text-decoration: none;
+    padding: .5em 1em;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.nextpage a {
+    float: right;
+    text-decoration: none;
+    padding: .5em 1em;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.prepage a:hover, .nextpage a:hover {
+    text-decoration: none;
+    background-color: #ff0000;
+    color: #f9f9f9;
+    -webkit-transition: color .2s linear;
+}
+
+.archive {
+    list-style: none;
+    line-height: 28px;
+}
+.arch{
+    height: 900px;
+    background-image: url("../images/timg5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.archive h3 {
+    margin: 0.5em 0;
+}
+
+.archive time {
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    margin-right: 1.2em;
+}
+
+.tag {
+    background-color: #ff0000;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 8px;
+}
+
+.tag:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-transition: color .2s linear;
+}
+
+.search {
+    border: 0;
+    width: 6em;
+    text-align: center;
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.archive {
+    list-style: none;
+    line-height: 28px;
+}
+
+.archive h3 {
+    margin: 0.5em 0;
+}
+
+.archive time {
+    float: left;
+    font-size: 14px;
+    color: #999999;
+    margin-right: 1.2em;
+}
+
+.tag {
+    background-color: #ff0000;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 5px;
+    margin-bottom: 8px;
+}
+
+.tag:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-transition: color .2s linear;
+}
+

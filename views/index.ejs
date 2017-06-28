@@ -1,0 +1,157 @@
+<% include header %>
+
+     <!--***************-->
+<div class="main">
+        <div class="main-inner body-width">
+            <div class="banner clearfix">
+                <div class="slider" id="slider">
+                    <ul class="slider-wrapper">
+                        <li class="item" data-title="这位上神！速速到我的本子里来">
+                            <a href="#" class="pic"><img src="images/cont/slider_img1.jpg" alt="#"></a>
+                        </li>
+                        <li class="item" data-title="想换上新衣去旅行！" data-author="by 占秋">
+                            <a href="#" class="pic"><img src="images/cont/slider_img2.jpg" alt="#"></a>
+                        </li>
+                        <li class="item" data-title="你的书写工具需要一个庇护所" data-author="by Moollly">
+                            <a href="#" class="pic"><img src="images/cont/slider_img3.jpg" alt="#"></a>
+                        </li>
+                        <li class="item" data-title="气温起伏，一件外套保护你" data-author="by 郑南音">
+                            <a href="#" class="pic"><img src="images/cont/slider_img4.jpg" alt="#"></a>
+                        </li>
+                        <li class="item" data-title="鲜为人知的泰国小众小城——董里">
+                            <a href="#" class="pic"><img src="images/cont/slider_img5.jpg" alt="#"></a>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="slider-prev"></a>
+                    <a href="javascript:;" class="slider-next"></a>
+                    <div class="slider-title">
+                        <h2></h2>
+                        <span></span>
+                    </div>
+                    <div class="slider-btns">
+                        <span class="item"></span>
+                        <span class="item"></span>
+                        <span class="item"></span>
+                        <span class="item"></span>
+                        <span class="item"></span>
+                    </div>
+                </div>
+                <div class="banner-info">
+                    <div class="news body-border">
+                        <ul>
+                            <li class="title">社区热点</li>
+                            <li class="link">
+                                <a href="#">冬天</a>
+                                <span></span>
+                                <a href="#">把生活过成一首诗</a>
+                                <span></span>
+                                <a href="#">早餐</a>
+                                <span></span>
+                                <a href="#">记下时间走过的路</a>
+                                <span></span>
+                                <a href="#">穿搭</a>
+                                <span></span>
+                                <a href="#">家居</a>
+                                <span></span>
+                                <a href="#">原创</a>
+                                <span></span>
+                            </li>
+                            <li class="choose">
+                                <a href="#">『人气连衣裙精选』 大合集</a>
+                                <span class="icon-text__pink">精选</span>
+                            </li>
+                            <li class="assistant">
+                                <p>收图小助手:  <a href="#">tang收集工具</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="app body-border"><a href="#"></a></div>
+                </div>
+            </div>
+            <div class="main-cont main-album">
+                <div class="main-cont__title">
+                    <h3>专辑精选</h3>
+                    <%- include paging%>
+                    <a href="#" class="more">往期回顾 ></a>
+                </div>
+                <ul class="main-cont__list clearfix">
+                    <% posts.forEach(function(post, index){ %>
+                    <li class="item">
+                        <a href="#" class="pic"><img src="images/cont/main_img1.jpg" alt="#"></a>
+                        <div class="info">
+                            <a href="#" class="title"><a  style="font-size: 20px;color: #0c9076;text-decoration: none" href="/u/<%= post.name %>/<%= post.time.minute %>/<%= post.title %>"><%= post.title %></a></a>
+                            <p class="info">
+                                日期：<%= post.time.minute %>
+                                标签：
+                                <% post.tags.forEach(function (tag, index) { %>
+                                <% if (tag) { %>
+                                <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+                                <% } %>
+                                <% }) %>
+                            </p>
+                            <p>by <a href="/u/<%= post.name %>"><%= post.name %></a></p>
+                        </div>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
+            <div class="main-cont main-recommend">
+                <div class="main-cont__title">
+                    <h3>精选内容</h3>
+                    <a href="#" class="more">更多内容 ></a>
+                </div>
+                <ul class="main-cont__list clearfix" style="height: 400px">
+
+                    <li class="item item-2">
+                        <span>ES6 联盟</span>
+                        <br><br><br>
+                        <p>ES6 是一门新潮的绝技秘法，学习更多的ES6框架的应用和研究，请关注Nicolas . 天秀</p>
+                        <br><br>
+                        <i style="color: #668844">友情链接</i> <a href="http://es6.ruanyifeng.com/" >ES6 阮一峰的个人博客</a>
+                    </li>
+                    <li class="item item-2">
+                        <span>Angular 宝库</span>
+                        <br><br><br>
+                        <p>Angular 是一门十分有用的Nodejs框架，学习更多的Angular框架的应用和研究，请关注Nicolas . 天秀</p>
+                        <br>
+                        <i style="color: #668844">友情链接</i> <a href="https://angularjs.org/" >Angular 官方文档</a>
+                    </li>
+                    <li class="item item-2">
+                        <span>Ajax 套路</span>
+                        <br><br><br>
+                        <p>Ajax 是一种巧妙的模版写法，学习更多的Ajax的应用和研究，请关注Nicolas . 天秀</p>
+                        <br><br>
+                        <i style="color: #668844">友情链接</i> <a href="http://www.w3school.com.cn/ajax/index.asp" >Ajax 教程</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <!--<% include paging %>-->
+    <div class="clear"></div>
+    <div class="divider-space"></div>
+</div>
+
+
+
+
+
+    <!--//**************-->
+<!--<% posts.forEach(function(post, index){ %>-->
+<!--<p><h2><a class="TT" href="/u/<%= post.name %>/<%= post.time.minute %>/<%= post.title %>"><%= post.title %></a></h2></p>-->
+<!--<p class="info">-->
+    <!--作者：<a href="/u/<%= post.name %>"><%= post.name %></a> |-->
+    <!--日期：<%= post.time.minute %> |-->
+    <!--标签：-->
+    <!--<% post.tags.forEach(function (tag, index) { %>-->
+    <!--<% if (tag) { %>-->
+    <!--<a class="tag" href="/tags/<%= tag %>"><%= tag %></a>-->
+    <!--<% } %>-->
+    <!--<% }) %>-->
+<!--</p>-->
+<!--<p><%- post.post %></p>-->
+<!--<% }) %>-->
+    <!--//******************-->
+
+
+<% include footer %>
+        
